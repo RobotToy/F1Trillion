@@ -6,7 +6,7 @@
 <br />
 <div align="center">
   <a href="https://jacobsschool.ucsd.edu/">
-    ![UCSDLogo_JSOE_BlueGold](https://github.com/user-attachments/assets/c60b1dda-19a2-4df4-be37-3d3034e0214f)
+    <img src="images\UCSDLogo_JSOE_BlueGold.png" alt="Logo" width="400" height="100">
   </a>
 <h3>MAE148 Final Project</h3>
 <p>
@@ -74,8 +74,9 @@ Summer Session 2 - Team 5: Color/Shape, Boundary, and Collision Recognition (Cam
 
 <!-- Final Project -->
 ## Final Project
+  The original goal was to use AI object detection paired with the OAK-D camera to build a model that recognizes basic street signs and color images from the camera. Based on how the AI model classifies these different objects and colors, the AI would then tell the autonomous car to react accordingly to the specific sign or color detected. The signs and colors would be placed on a track we planned, we would then pair the GNSS to set an origin on the track where the car would stop, start, and prevent the car from going out of bounds from our track. Additionally to using the camera and GNSS sensors, we wanted to include the Lidar to prevent the autonomous vehicle from running into objects, it was planned to prevent it from running into an object if an object was detected within a foot of it.
+  Due to the limitations of time of taking MAE 148 during the summer, we had to change the goal of our project to using rock, paper, scissors to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for object detection. We built a model that recognizes the hand signals rock, paper, scissors to control our autonomous vehicle instead. The car will start from rest until the camera sees the hand signal for rock, when rock is detected the first time, the car drives straight. When detecting the hand signal scissors, the car will steer left, when detecting the hand signal paper, the car will steer right. When the car detects rock again, it will stop driving. Our goal with the lidar and GNSS was still kept.
 
-The goal of our project was to create an autonomous robot that could recognize colors/shapes using the stereo vision camera.  This evolved into a goal to have the car recognize the hand signals of rock, paper, and scissors.  To achieve this goal, we would use a combination of the provided UCSD Robocar parts/framework, AI models pulled from Roboflow, and our own ROS2 packages.
 
 <!-- Original Goals -->
 ### Original Goals
@@ -100,14 +101,7 @@ See [`README`](docker/README.md) section in our `docker` directory for breakdown
 
 ### Our Hopes and Dreams
 #### Stretch Goal 1
-- Complete package integration with ROS
-  - We successfully trained our car in several different paths using GPS PointOneNav in DonkeyCar and storing the paths as `.csv` files
-  - Unfortunately we didn't have enough time to ROS-ify the Donkey GPS framework to run them from within our ROS/Robocar modules
 
-#### Stretch Goal 2
-- LiDAR
-  - If our car is driving autonomously with GPS only, we would definitely activate the LiDAR to incorporate an emergency stop
-  - Object detection for collision avoidance on while driving on the pretrained GPS paths
 
 ### Final Project Documentation
 
@@ -120,58 +114,40 @@ See [`README`](docker/README.md) section in our `docker` directory for breakdown
 
 ### CAD Parts
 #### Final Assembly
-<img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/aa99560c-a7ff-4ca0-b913-24ac75bb6eec" width="700" height="500" />
 
 #### Custom Designed Parts
-| Part | CAD Model | Designer |
-|------|--------------|------------|
-| Front Camera and LiDAR Mount | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/03902430-3625-4b19-ae1d-3ddaa344aa6a" width="300" height="300" /> | Kiersten
-| Side Camera and GNSS Puck Mount | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/ce443b16-9706-402e-be97-a78447cd391f" width="300" height="400" /> | Kiersten
-| Acrylic Base | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/2b4e5f76-f76d-4184-8922-512b867e38bc" width="300" height="300" /> | Damien
-| Side Paneling | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/d4d178f0-1912-44ac-8c8f-8a4d6e4bb17f" width="300" height="300" /> | Damien
 
 
 #### Open Source Parts
-| Part | CAD Model | Source |
-|------|--------|-----------|
-| Jetson Nano Case | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/6770d099-0e2e-4f8d-8072-991f1b72971f" width="400" height="300" /> | [Thingiverse](https://www.thingiverse.com/thing:3778338) |
-| Oak-D Lite Case | <img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/bcc64c60-d67c-47af-b0cb-f46ac7b8a4c1" width="400" height="300" /> | [Thingiverse](https://www.thingiverse.com/thing:533649) |
 
 
 ### Electronic Hardware
-Below is a circuit diagram of the electronic hardware setup for the car.
-
-<img src="https://github.com/kiers-neely/ucsd-mae-148-team-4/assets/161119406/6f7501ee-382a-4590-9c0a-f8ce738efec3" width="800" height="400" />
 
 
 ### Software
 #### Embedded Systems
-To program the Jetson Nano, we accessed the Jetson Nano through remote SSH connection to an embedded Linux system onboard and ran a docker container with all the necessary dependencies to run our packages. This allowed us to eliminate any incompatibility issues and to maximize resource efficiency on the Jetson. We used a variation of virtualization softwares including VMWare and WSL2 to build, test and launch our programs. 
 
 #### ROS2
-The base image pulled from Docker Hub for our project development contained the UCSD Robocar module ran on a Linux OS (Ubuntu 20.04). The Robocar module, consisting of several submodules using ROS/ROS2, was originally developed by Dominic Nightingale, a UC San Diego graduate student. His framework was built for use with a wide variety of sensors and actuation methods on scale autonomous vehicles, providing the ability to easily control a car-like robot while enabling the robot to simultaneously perform autonomous tasks.
 
 #### DonkeyCar AI
-For our early quarter course deliverables we used DonkeyCar to train a car in driving autonomous laps around a track in a simulated environment. We used Deep Learning to record visual data of driving on a simulated track and trained the car with the data to then race on a remote server. This helped us to prepare for training our physical car on an outdoor track with computer vision.
 
 <!-- Authors -->
 ## Authors
-  - [@kiers-neely](https://github.com/kiers-neely)  
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-*Thank you to my teammates, Professor Jack Silberman, and our incredible TA Arjun Naageshwaran for an amazing Winter 2024 class!*
+
 
 <!-- CONTACT -->
 ## Contact
 
 * Adem Evecek - aevecek@gmail.com
-* Alexa Nordstrom - 
-* Reggie Estrella - 
-* Parissa Teli - 
+* Alexa Nordstrom - AlexaN2896@gmail.com
+* Reggie Estrella - rege2021@gmail.com
+* Parissa Teli - pikie.teli@gmail.com
 
 
 
