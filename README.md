@@ -117,21 +117,30 @@ See [`README`](src/README.md) section in our `src` directory for breakdown of ho
 
 <!-- Early Quarter -->
 ## Robot Design
-
 ### CAD Parts
 #### Final Assembly
-<img src="images\FinalAssembly.png" alt="Logo" width="400" height="100">
+<img src="images\FinalAssembly.png">
 
 #### Custom Designed Parts
-- 
--
--
--
--
+- LIDAR Mount (Alexa)
+<img src="images\LIDARMountpng">
+- GNSS Mount (Parissa)
+<img src="images\GPSMount.png">  
+- Camera Stand (Alexa)
+<img src="images\CameraCase_01.png">
+- Camera Case (Alexa)
+<img src="images\CameraCase_02.png">
+- GPS Stand (Parissa)
+<img src="images\GPSStand.png">
+- GPS Receiver Mount (Alexa)
+<img src="images\GPSReceiverMount.png">
+- Side Plate Cover (Alexa)
+<img src="images\SidePlateCover.png">
+- Base Plate (Adem)
+<img src="images\BasePlate.png">
 
 #### Open Source Parts
 - Jetson Nano Case: https://www.printables.com/model/395600-jetson-nano-case
-- 
 
 ### Electronic Hardware
 
