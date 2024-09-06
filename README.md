@@ -119,7 +119,8 @@ See [`README`](docker/README.md) section in our `docker` directory for breakdown
 
 
 #### Open Source Parts
-
+- Jetson Nano Case: https://www.printables.com/model/395600-jetson-nano-case
+- 
 
 ### Electronic Hardware
 
