@@ -68,8 +68,8 @@ Summer Session 2 - Team 5: Color/Shape, Boundary, and Collision Recognition (Cam
 <ul>
   <li>Adem Evecek - Mechanical Engineering</li>
   <li>Alexa Nordstrom - Electrical and Computer Engineering</li>
-  <li>Reggie Estrella - Mechanical Engineering</li>
   <li>Parissa Teli - Mechanical Engineering</li>
+  <li>Reggie Estrella - Mechanical Engineering</li>
 </ul>
 
 <!-- Final Project -->
