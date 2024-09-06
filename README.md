@@ -13,7 +13,7 @@
 Summer Session 2 - Team 5: Color/Shape, Boundary, and Collision Recognition (Camera, LiDAR, GNSS)
 </p>
 
-<!--Insert image of team car here-->
+<img src="images\GroupPic.png">
 </div>
 
 
