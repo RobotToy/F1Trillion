@@ -18,7 +18,7 @@ class hand_detection_node(Node):
             confidence=0.05,
             overlap=0.5,
             version="14",
-            api_key="kDi4xMfGMvnsVqisDYa1",
+            api_key="insert API key here",
             rgb=True,
             depth=True,
             device=None,
