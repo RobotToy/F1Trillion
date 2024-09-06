@@ -125,7 +125,7 @@ See [`README`](src/README.md) section in our `src` directory for breakdown of ho
 - LIDAR Mount (Alexa)
 <img src="images\LIDARMountpng">
 - GNSS Mount (Parissa)
-<img src="images\GPSMount.png">  
+<img src="images\GNSSMount.png">  
 - Camera Stand (Alexa)
 <img src="images\CameraCase_01.png">
 - Camera Case (Alexa)
