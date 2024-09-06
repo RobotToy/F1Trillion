@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lidar_collision_avoidance</name>
+  <version>0.0.1</version>
+  <description>A package for LiDAR-based collision avoidance.</description>
+
+  <maintainer email="your_email@example.com">your_name</maintainer>
+  <license>Apache License 2.0</license>
+
+  <!-- Dependencies for building and running the package -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- Optional dependencies for testing -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Export for Python package -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
+
+
+
+
+
+
