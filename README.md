@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h1 align="center">MAE148 Team F1 Trillion</h1>
+<h1 align="center">MAE148 Team 5 - F1 Trillion</h1>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -74,8 +74,15 @@ Summer Session 2 - Team 5: Color/Shape, Boundary, and Collision Recognition (Cam
 
 <!-- Final Project -->
 ## Final Project
+### How Our Goals Changed
   <p>The original goal was to use AI object detection paired with the OAK-D camera to build a model that recognizes basic street signs and color images from the camera. Based on how the AI model classifies these different objects and colors, the AI would then tell the autonomous car to react accordingly to the specific sign or color detected. The signs and colors would be placed on a track we planned, we would then pair the GNSS to set an origin on the track where the car would stop, start, and prevent the car from going out of bounds from our track. Additionally to using the camera and GNSS sensors, we wanted to include the Lidar to prevent the autonomous vehicle from running into objects, it was planned to prevent it from running into an object if an object was detected within a foot of it.<p>
   <p>Due to the limitations of time of taking MAE 148 during the summer, we had to change the goal of our project to using rock, paper, scissors to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for object detection. We built a model that recognizes the hand signals rock, paper, scissors to control our autonomous vehicle instead. The car will start from rest until the camera sees the hand signal for rock, when rock is detected the first time, the car drives straight. When detecting the hand signal scissors, the car will steer left, when detecting the hand signal paper, the car will steer right. When the car detects rock again, it will stop driving. Our goal with the lidar and GNSS was still kept.<p>
+    
+### Hardware
+  <p>For our final project and class work, we used a NVIDIA Jetson NANO as our computer provided by the class. The reason for using this computer is because the Jetson is a powerful small computer that can run AI models for image classification, object detection, segmentation, and speech processing. The Jetson provided our class a multitude of options for learning and final project ideas. To run object detection models on our Jetson, an OAK-D Lite camera was utilized to process image data. The OAK-D camera is designed to provide accurate short and long range stereo depth perception. This is ideal for its ability to run any AI model making it great for robotic vision. A LD06 Lidar sensor was used for detecting objects nearby, it has 360 degree laser scanning using DTOF technology to measure distances to nearby objects. Also a GNSS Receiver and Antenna was used to receive and process signals from navigation satellites to record and set positioning for the autonomous vehicle. Finally a VESC motor controller was used to control the speed and direction of the motors and servos on the autonomous vehicle set by the PID parameters and code ROS2 commands. PID stands for Proportional-integral-derivative controller.<p>
+
+### Software
+  <p>VMware was the software platform where all of our ROS2 nodes were contained within Docker. ROS2 stands for Robotics Operating System 2, it is a set of software libraries and tools that help build robot applications. Roboflow was used to download a model for hand signals to train our AI to control our autonomous vehicle according to the hand signal. For our final project, we created a custom package in ROS2 to process the AI hand signal model we sourced from Roboflow and to use the lidar sensor to prevent the car from running into objects. The ROS2 robocar docker already built for the class contained premade packages and data to complete course tasks for the car to complete. Due to the accessibility and functionality of ROS2, we added our own package to this container and were able to utilize some of the packages and data already in the container to help run our own package.<p>
 
 
 <!-- Original Goals -->
@@ -97,7 +104,6 @@ Summer Session 2 - Team 5: Color/Shape, Boundary, and Collision Recognition (Cam
 
 See [`README`](src/README.md) section in our `src` directory for breakdown of how our packages run together
 
-See [`README`](docker/README.md) section in our `docker` directory for breakdown of how to run the Docker container for our program with all dependencies built into the image
 
 ### Our Hopes and Dreams
 #### Stretch Goal 1
@@ -114,9 +120,14 @@ See [`README`](docker/README.md) section in our `docker` directory for breakdown
 
 ### CAD Parts
 #### Final Assembly
+<img src="images\FinalAssembly.png" alt="Logo" width="400" height="100">
 
 #### Custom Designed Parts
-
+- 
+-
+-
+-
+-
 
 #### Open Source Parts
 - Jetson Nano Case: https://www.printables.com/model/395600-jetson-nano-case
