@@ -89,7 +89,10 @@ https://github.com/user-attachments/assets/ef5bdd65-9847-4e44-9062-f650a0391855
 https://github.com/user-attachments/assets/609624b2-e438-4ed6-8b3d-a47af00dfec2
 
 ### LiDAR In Action
-https://github.com/user-attachments/assets/14ca2c3a-39cb-4e24-a133-807150e01b74
+
+https://github.com/user-attachments/assets/3b33167a-7553-4b75-b4fb-097402140350
+
+
 
 
 ### How Our Goals Changed
