@@ -83,7 +83,7 @@ videos {
 ## Final Project
 ### How Our Goals Changed
   <p>The original goal was to use an AI object detection paired with the OAK-D camera to build a model that recognizes basic street signs (arrows and shapes) and colored objects from the camera. Based on how the AI model classifies these different objects and colors, the AI would tell the autonomous car to react accordingly to the specific sign or color detected. The signs and colors would be placed on a dynamic track we planned, then we would pair the GNSS to set an origin on the track where the car would start, preventing the car from going beyond a radius from said origin. Additionally to using the camera and GNSS sensors, we wanted to include the Lidar to prevent the autonomous vehicle from running into stray obstacles. It was planned to prevent it from running into an object if an object was detected within a foot of it.<p>
-  <p>Due to the time limitations of taking MAE 148 during the summer, we had to pivot our project goals to recognize hand signals, using rock, paper, and scissors symbols to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for hand signal recognition to direct the car. When the program is started, the car remains in a stationary mode until it detects a rock hand signal. After that, the car moves at a constant velocity for 3 seconds, where it will not accept any other input to avoid inputting rock twice on accident. After this period, the car will search for further input while still moving forward at the same velocity. If it detects a paper or scissors input, the car will turn right or left respectively. If it detects a rock after the 3-second period, the car will come to a stop and wait for another rock input to start again. Our goal with the lidar and GNSS was still kept.<p>
+  <p>Due to the time limitations of taking MAE 148 during the summer, we had to pivot our project goals to recognize hand signals, using rock, paper, and scissors symbols to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for hand signal recognition to direct the car. When the program is started, the car remains in a stationary mode until it detects a rock hand signal. After that, the car moves at a constant velocity for 3 seconds, where it will not accept any other input to avoid inputting rock twice on accident. After this period, the car will search for further input while still moving forward at the same velocity. If it detects a paper or scissors input, the car will turn right or left respectively. If it detects a rock after the 3-second period, the car will come to a stop and wait for another rock input to start again. Our goal with the lidar and GNSS was still kept, however, only the LiDAR was completed, while the GNSS was left unfinished.<p>
 
 <!-- Original Goals -->
 ### Original Goals
@@ -96,17 +96,27 @@ videos {
 - Traps/Speed Boosts
   - Robot recognizes and avoids objects that represent traps and goes through objects that represent speed boosts. When passing these “speed boosts,” the car will speed up for a duration of time. 
 - Reach Goal: Cannon
-  - At the end of a course, car recognizes a target, positions itself accordingly and fires a marble at the target
+  - At the end of a course, the car recognizes a target, positions itself accordingly, and fires a marble at the target
    
 <!-- End Results -->
 ### Goals We Met
-- 
+- Having the car respond to hand signals for steering and driving
+  - Having an AI model that the OAKD camera and Jetson Nano used to identify signals
+  - Having the car respond according using ROS2
+- Having a functioning anti-collision LiDAR system that stopped if an object was within 1 foot of the car
+- Having a script for a GNSS Boundary Radius system
 
 See [`README`](src/README.md) section in our `src` directory for breakdown of how our packages run together
 
 
-### Our Hopes and Dreams
-#### Stretch Goal 1
+### What We Could Have Done With More Time...
+- Fix the LiDAR and Hand Detection ROS2 packages to get them successfully communicating with each other and the VESC package
+- Retry making the arrow and shape AI detection model with a larger dataset
+  - Keep the Rock, Paper, Scissors model as a manual steering system
+- Test out and implement the GNSS Boundary Radius script
+- Add out Stretch Goal Ideas
+  - Adding colored objects to avoid/drive over for boosts and traps
+  - Adding a target at the end of the course for the car to shoot at
 
 ### Car In Action
 
@@ -172,7 +182,7 @@ Adem, Alexa, Reggie, and Parissa
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
+<p>Thank you to UCSD Jacobs School of Engineering, Professor Jack Silberman, Alexander Haken, Eric Foss, and all our class peers for taking the time to support us along the way!
 
 <!-- CONTACT -->
 ## Contact
