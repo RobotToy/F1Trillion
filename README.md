@@ -58,8 +58,15 @@ Summer Session 2 - Team 5: Shape/Color, Collision, and Boundary Recognition (OAK
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-
+videos {
+  display: flex;
+  gap: 40px;
+}
+@media only screen and (max-width: 1100px) {
+  .videos {
+    flex-direction: column;
+  }
+}
 
 <!-- TEAM MEMBERS -->
 ## Team Members
