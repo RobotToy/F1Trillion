@@ -77,13 +77,6 @@ Summer Session 2 - Team 5: Shape/Color, Collision, and Boundary Recognition (OAK
 ### How Our Goals Changed
   <p>The original goal was to use an AI object detection paired with the OAK-D camera to build a model that recognizes basic street signs (arrows and shapes) and colored objects from the camera. Based on how the AI model classifies these different objects and colors, the AI would tell the autonomous car to react accordingly to the specific sign or color detected. The signs and colors would be placed on a dynamic track we planned, then we would pair the GNSS to set an origin on the track where the car would start, preventing the car from going beyond a radius from said origin. Additionally to using the camera and GNSS sensors, we wanted to include the Lidar to prevent the autonomous vehicle from running into stray obstacles. It was planned to prevent it from running into an object if an object was detected within a foot of it.<p>
   <p>Due to the time limitations of taking MAE 148 during the summer, we had to pivot our project goals to recognize hand signals, using rock, paper, and scissors symbols to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for hand signal recognition to direct the car. When the program is started, the car remains in a stationary mode until it detects a rock hand signal. After that, the car moves at a constant velocity for 3 seconds, where it will not accept any other input to avoid inputting rock twice on accident. After this period, the car will search for further input while still moving forward at the same velocity. If it detects a paper or scissors input, the car will turn right or left respectively. If it detects a rock after the 3-second period, the car will come to a stop and wait for another rock input to start again. Our goal with the lidar and GNSS was still kept.<p>
-    
-### Hardware
-  <p>For our final project and classwork, we used an NVIDIA Jetson Nano as the embedded computer provided by the course. The Jetson Nano was chosen for its ability to run AI models for tasks such as image classification, object detection, segmentation, and speech processing, all in a compact and energy-efficient form factor. This provided our class with a wide range of learning opportunities and final project possibilities. To run object detection models on the Jetson Nano, we utilized an OAK-D Lite camera to process image data. The OAK-D Lite is a depth camera with an integrated AI processor that provides accurate short- and long-range stereo depth perception. This capability makes it well-suited for robotic vision applications and running AI models directly on the device. Additionally, we used an LD06 LiDAR sensor to detect nearby objects. The LD06 LiDAR offers 360-degree laser scanning using Direct Time-of-Flight (DTOF) technology, which allows it to measure distances to surrounding objects with high precision. We also integrated a GNSS receiver and antenna to receive and process signals from navigation satellites, enabling precise positioning and navigation for the autonomous vehicle. Finally, we employed a VESC (Vedder Electronic Speed Controller) to control the speed and direction of the motors and servos on the autonomous vehicle. The VESC motor controller utilizes Proportional-Integral-Derivative (PID) control algorithms and ROS 2 commands to manage vehicle dynamics effectively.<p>
-
-### Software
-  <p>ROS 2 (Robot Operating System 2) is a set of open-source software libraries and tools for developing robotics applications, which we extensively utilized throughout the class. All of our ROS 2 code, packages, and nodes were organized within a Docker container, which we accessed and ran on our Jetson Nano. To interact with the Jetson Nano, we used a terminal on a VMware virtual machine. We developed two custom ROS 2 packages: a hand detection package and a LiDAR obstacle detection package. The hand detection package integrated with Roboflow to access the AI model we used for our autonomous vehicle. Both packages communicated with the VESC ROS 2 package provided within the Docker container, which enabled us to control the speed and direction of the vehicle via the VESC motor controller.<p>
-
 
 <!-- Original Goals -->
 ### Original Goals
@@ -123,29 +116,31 @@ See [`README`](src/README.md) section in our `src` directory for breakdown of ho
 
 #### Custom Designed Parts
 - LIDAR Mount (Alexa)
-<img src="images\LIDARMountpng">
+<img src="images\LIDARMount.png" width="200px" height="auto">
 - GNSS Mount (Parissa)
-<img src="images\GNSSMount.png">  
+<img src="images\GNSSMount.png" width="200px" height="auto">  
 - Camera Stand (Alexa)
-<img src="images\CameraCase_01.png">
+<img src="images\CameraCase_01.png" width="200px" height="auto">
 - Camera Case (Alexa)
-<img src="images\CameraCase_02.png">
+<img src="images\CameraCase_02.png" width="200px" height="auto">
 - GPS Stand (Parissa)
-<img src="images\GPSStand.png">
+<img src="images\GPSStand.png" width="200px" height="auto">
 - GPS Receiver Mount (Alexa)
-<img src="images\GPSReceiverMount.png">
+<img src="images\GPSReceiverMount.png" width="200px" height="auto">
 - Side Plate Cover (Alexa)
-<img src="images\SidePlateCover.png">
+<img src="images\SidePlateCover.png" width="200px" height="auto">
 - Base Plate (Adem)
-<img src="images\BasePlate.png">
+<img src="images\BasePlate.png" width="200px" height="auto">
 
 #### Open Source Parts
 - Jetson Nano Case: https://www.printables.com/model/395600-jetson-nano-case
 
 ### Electronic Hardware
-
+<p>For our final project and classwork, we used an NVIDIA Jetson Nano as the embedded computer provided by the course. The Jetson Nano was chosen for its ability to run AI models for tasks such as image classification, object detection, segmentation, and speech processing, all in a compact and energy-efficient form factor. This provided our class with a wide range of learning opportunities and final project possibilities. To run object detection models on the Jetson Nano, we utilized an OAK-D Lite camera to process image data. The OAK-D Lite is a depth camera with an integrated AI processor that provides accurate short- and long-range stereo depth perception. This capability makes it well-suited for robotic vision applications and running AI models directly on the device. Additionally, we used an LD06 LiDAR sensor to detect nearby objects. The LD06 LiDAR offers 360-degree laser scanning using Direct Time-of-Flight (DTOF) technology, which allows it to measure distances to surrounding objects with high precision. We also integrated a GNSS receiver and antenna to receive and process signals from navigation satellites, enabling precise positioning and navigation for the autonomous vehicle. Finally, we employed a VESC (Vedder Electronic Speed Controller) to control the speed and direction of the motors and servos on the autonomous vehicle. The VESC motor controller utilizes Proportional-Integral-Derivative (PID) control algorithms and ROS 2 commands to manage vehicle dynamics effectively.<p>
 
 ### Software
+<p>ROS 2 (Robot Operating System 2) is a set of open-source software libraries and tools for developing robotics applications, which we extensively utilized throughout the class. All of our ROS 2 code, packages, and nodes were organized within a Docker container, which we accessed and ran on our Jetson Nano. To interact with the Jetson Nano, we used a terminal on a VMware virtual machine. We developed two custom ROS 2 packages: a hand detection package and a LiDAR obstacle detection package. The hand detection package integrated with Roboflow to access the AI model we used for our autonomous vehicle. Both packages communicated with the VESC ROS 2 package provided within the Docker container, which enabled us to control the speed and direction of the vehicle via the VESC motor controller.<p>
+
 #### Embedded Systems
 
 #### ROS2
@@ -154,6 +149,7 @@ See [`README`](src/README.md) section in our `src` directory for breakdown of ho
 
 <!-- Authors -->
 ## Authors
+Adem, Alexa, Reggie, and Parissa
 
 <!-- Badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
