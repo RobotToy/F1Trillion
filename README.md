@@ -118,7 +118,7 @@ https://github.com/user-attachments/assets/3b33167a-7553-4b75-b4fb-097402140350
 
 ### Final Project Documentation
 
-* [Final Project Proposal]()
+* [Final Project Proposal](https://docs.google.com/presentation/d/149ey8cwAvXsUmJxZ4Va9ZURyE4VWKbZXpF0pVfb1jwk/edit?usp=sharing)
 * [Progress Update 9/3](https://docs.google.com/presentation/d/1g33PE9AXjGcXSfOKlIWwQ00itkMUI3Xohn7YYAK-YBs/edit?usp=sharing)
 * [Final Project Presentation 9/6](https://docs.google.com/presentation/d/1Kh5DuJ2OJTZT9KIFtTjcRsvLP3D4vm2SrYZrtaFCOiI/edit?usp=sharing)
 
