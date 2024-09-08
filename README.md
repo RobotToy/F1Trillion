@@ -178,8 +178,8 @@ Adem, Alexa, Reggie, and Parissa
 
 * Adem Evecek - aevecek@gmail.com
 * Alexa Nordstrom - AlexaN2896@gmail.com
-* Reggie Estrella - rege2021@gmail.com
 * Parissa Teli - pikie.teli@gmail.com
+* Reggie Estrella - rege2021@gmail.com
 
 
 
