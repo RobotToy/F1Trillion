@@ -81,20 +81,6 @@ videos {
 
 <!-- Final Project -->
 ## Final Project
-
-### Car In Action
-
-https://github.com/user-attachments/assets/ef5bdd65-9847-4e44-9062-f650a0391855
-
-https://github.com/user-attachments/assets/609624b2-e438-4ed6-8b3d-a47af00dfec2
-
-### LiDAR In Action
-
-https://github.com/user-attachments/assets/3b33167a-7553-4b75-b4fb-097402140350
-
-
-
-
 ### How Our Goals Changed
   <p>The original goal was to use an AI object detection paired with the OAK-D camera to build a model that recognizes basic street signs (arrows and shapes) and colored objects from the camera. Based on how the AI model classifies these different objects and colors, the AI would tell the autonomous car to react accordingly to the specific sign or color detected. The signs and colors would be placed on a dynamic track we planned, then we would pair the GNSS to set an origin on the track where the car would start, preventing the car from going beyond a radius from said origin. Additionally to using the camera and GNSS sensors, we wanted to include the Lidar to prevent the autonomous vehicle from running into stray obstacles. It was planned to prevent it from running into an object if an object was detected within a foot of it.<p>
   <p>Due to the time limitations of taking MAE 148 during the summer, we had to pivot our project goals to recognize hand signals, using rock, paper, and scissors symbols to direct our car instead. With the new goal of our project, we still used an AI model and the OAK-D camera for hand signal recognition to direct the car. When the program is started, the car remains in a stationary mode until it detects a rock hand signal. After that, the car moves at a constant velocity for 3 seconds, where it will not accept any other input to avoid inputting rock twice on accident. After this period, the car will search for further input while still moving forward at the same velocity. If it detects a paper or scissors input, the car will turn right or left respectively. If it detects a rock after the 3-second period, the car will come to a stop and wait for another rock input to start again. Our goal with the lidar and GNSS was still kept.<p>
@@ -122,6 +108,15 @@ See [`README`](src/README.md) section in our `src` directory for breakdown of ho
 ### Our Hopes and Dreams
 #### Stretch Goal 1
 
+### Car In Action
+
+https://github.com/user-attachments/assets/ef5bdd65-9847-4e44-9062-f650a0391855
+
+https://github.com/user-attachments/assets/609624b2-e438-4ed6-8b3d-a47af00dfec2
+
+### LiDAR In Action
+
+https://github.com/user-attachments/assets/3b33167a-7553-4b75-b4fb-097402140350
 
 ### Final Project Documentation
 
