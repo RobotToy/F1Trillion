@@ -75,13 +75,13 @@ Summer Session 2 - Team 5: Shape/Color, Collision, and Boundary Recognition (OAK
 <!-- Final Project -->
 ## Final Project
 
-
+### Car In Action
 https://github.com/user-attachments/assets/14ca2c3a-39cb-4e24-a133-807150e01b74
 
-
+### Car In Action On A Stand
 https://github.com/user-attachments/assets/dffe8a4a-a186-46bb-a9d6-806dce8a8ebf
 
-
+### LiDAR In Action
 https://github.com/user-attachments/assets/bf7ac3c2-0a35-4231-9118-164501041f73
 
 
