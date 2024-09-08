@@ -43,11 +43,6 @@ Summer Session 2 - Team 5: Shape/Color, Collision, and Boundary Recognition (OAK
           </ul>
         <li><a href="#electronic-hardware">Electronic Hardware</a></li>
         <li><a href="#software">Software</a></li>
-          <ul>
-            <li><a href="#embedded-systems">Embedded Systems</a></li>
-            <li><a href="#ros2">ROS2</a></li>
-            <li><a href="#donkeycar-ai">DonkeyCar AI</a></li>
-          </ul>
       </ul>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#authors">Authors</a></li>
@@ -155,12 +150,6 @@ https://github.com/user-attachments/assets/3b33167a-7553-4b75-b4fb-097402140350
 
 ### Software
 <p>ROS 2 (Robot Operating System 2) is a set of open-source software libraries and tools for developing robotics applications, which we extensively utilized throughout the class. All of our ROS 2 code, packages, and nodes were organized within a Docker container, which we accessed and ran on our Jetson Nano. To interact with the Jetson Nano, we used a terminal on a VMware virtual machine. We developed two custom ROS 2 packages: a hand detection package and a LiDAR obstacle detection package. The hand detection package integrated with Roboflow to access the AI model we used for our autonomous vehicle. Both packages communicated with the VESC ROS 2 package provided within the Docker container, which enabled us to control the speed and direction of the vehicle via the VESC motor controller.<p>
-
-#### Embedded Systems
-
-#### ROS2
-
-#### DonkeyCar AI
 
 <!-- Authors -->
 ## Authors
