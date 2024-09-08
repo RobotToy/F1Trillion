@@ -83,8 +83,10 @@ videos {
 ## Final Project
 
 ### Car In Action
-https://github.com/user-attachments/assets/bf7ac3c2-0a35-4231-9118-164501041f73
-https://github.com/user-attachments/assets/dffe8a4a-a186-46bb-a9d6-806dce8a8ebf
+
+https://github.com/user-attachments/assets/ef5bdd65-9847-4e44-9062-f650a0391855
+
+https://github.com/user-attachments/assets/609624b2-e438-4ed6-8b3d-a47af00dfec2
 
 ### LiDAR In Action
 https://github.com/user-attachments/assets/14ca2c3a-39cb-4e24-a133-807150e01b74
