@@ -30,10 +30,6 @@ Summer Session 2 - Team 5: Shape/Color, Collision, and Boundary Recognition (OAK
           <ul>
             <li><a href="#goals-we-met">Goals We Met</a></li>
             <li><a href="#what-we-could-have-done-with-more-time">What We Could Have Done With More Time...</a></li>
-              <ul>
-                <li><a href="#stretch-goal-1">Stretch Goal 1</a></li>
-                <li><a href="#stretch-goal-2">Stretch Goal 2</a></li>
-              </ul>
           </ul>
         <li><a href="#final-project-documentation">Final Project Documentation</a></li>
       </ul>
